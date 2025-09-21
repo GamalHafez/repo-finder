@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Repo finder</title>
+    <link rel="icon" href="./images/searcher.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <article class="container">
+      <h1 class="title">REPO-FINDER</h1>
+      <form class="finder-form">
+        <fieldset class="fieldset">
+          <legend class="legend">Choose search type</legend>
+
+          <input
+            type="radio"
+            name="repo-type"
+            value="user"
+            id="users"
+            class="input"
+          />
+          <input
+            type="radio"
+            name="repo-type"
+            value="org"
+            id="organizations"
+            class="input"
+          />
+          <label role="radio" tabindex="0" for="users" class="label"
+            >Users</label
+          >
+          <label role="radio" tabindex="0" for="organizations" class="label"
+            >Organizations</label
+          >
+        </fieldset>
+        <div class="search-box">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="search"
+            placeholder="Search GitHub"
+          />
+          <button class="button">Search</button>
+        </div>
+        <p class="error-message"></p>
+      </form>
+      <div class="loader"></div>
+      <output class="repos-box"></output>
+    </article>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

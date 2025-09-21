@@ -1,0 +1,25 @@
+{
+  "name": "repo-finder",
+  "version": "1.0.0",
+  "description": "A simple web app to search GitHub repositories.",
+  "license": "ISC",
+  "author": "Gamal Hafez",
+  "homepage": "https://GamalHafez.github.io/repo-finder",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "lint": "eslint . --ext .js,.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@parcel/transformer-sass": "^2.15.4",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.3.0",
+    "parcel": "^2.15.4",
+    "sass": "^1.92.1"
+  }
+}
